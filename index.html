@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html ng-app="basketballApp">
+
+<head>
+    <title>BasketBall-Meetup</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="styles/find-setup.css">
+</head>
+
+<body>
+    <!-- <header>
+      THE SITE FOR BASKETBALL MEET UPS  <span>Carlos Sueldo</span>
+    </header> -->
+<ui-view>
+    <div class="main-container">
+        <div class="left">
+            <div class="wrap-container">
+                <h1>Basketball Meetups</h1>
+                <p class="p-home">
+                    you got next game?
+                </p>
+                <div class="button-container">
+                    <button ui-sref="find-setup" class="start-button">I'm in</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right"></div>
+    </div>
+</ui-view>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="js/services/basketballApp.js"></script>
+</body>
+
+</html>

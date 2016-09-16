@@ -1,0 +1,58 @@
+/*.left-margin{
+  background-color: black;
+  height: 100vh;
+  width: 20%;
+  float: left;
+
+}*/
+
+.find-setup-main-container{
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.background-container{
+  background: #8e0000;
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+}
+.picking-content-wrapper{
+  height: 400px;
+  width: 800px;
+  margin: auto;
+}
+.picking-left{
+  height: 400px;
+  width: 400px;
+  background-color: lightgrey;
+  float: left;
+}
+.picking-right{
+  height: 400px;
+  width: 400px;
+  background-color: yellow;
+  float: right;
+
+}
+.picking-h2{
+  margin-left: 20px:
+}
+.search-text{
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  font-weight: 200;
+}
+.search-button-container{
+  float: right;
+}
+
+/*.right-margin{
+  background-color:black;
+  height: 100vh;
+  width: 20%;
+  float: right;
+
+  position: relative;
+}*/
