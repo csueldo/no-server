@@ -1,27 +1,29 @@
-/*.left-margin{
-  background-color: black;
-  height: 100vh;
-  width: 20%;
-  float: left;
-
-}*/
 
 .find-setup-main-container{
-  background: black;
+  background: #0a3665;
   height: 100vh;
   width: 100%;
   position: absolute;
 }
 .background-container{
-  background: #8e0000;
+  background: white;
   height: 100vh;
   width: 800px;
   margin: 0 auto;
 }
+.find-setup-header{
+  background-color: #0066ae;
+  height: 60px;
+}
+.find-setup-2header{
+  height: 40px;
+  background-color: #bc162c;
+}
 .picking-content-wrapper{
   height: 400px;
   width: 800px;
-  margin: auto;
+  top: 100px;
+  position: relative;
 }
 .picking-left{
   height: 400px;
@@ -32,7 +34,7 @@
 .picking-right{
   height: 400px;
   width: 400px;
-  background-color: yellow;
+  background-color: darkgrey;
   float: right;
 
 }
