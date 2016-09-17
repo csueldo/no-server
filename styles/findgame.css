@@ -1,12 +1,43 @@
-.findgame-message-container{
+.mc{
+  width: 100%;
+  height: 100vh;
+  display: block
+}
+.l {
+  background-color: #0a3665;
+  width: 30%;
+  height: 100vh;
+  float: left;
+}
+.r {
+  background-color: #0066ae;
+  width: 70%;
+  height: 100vh;
+  float: right;
+  background-size: cover;
+}
+.ri{
+  background-color: yellow;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+}
+/*.findgame-message-container{
   background-color: #0a3665;
   height: 100vh;
   width: 30%;
   float: left;
 }
-.findgame-main-container{
+.findgame-right-container{
   background-color: #0066ae;
   height: 100hv;
   width: 70%;
   float: right;
+
 }
+.meetups{
+  width:70%;
+  height: 800px;
+  background-color: red;
+
+}*/
