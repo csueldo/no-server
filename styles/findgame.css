@@ -1,27 +1,37 @@
-.mc{
+.table{
   width: 100%;
-  height: 100vh;
-  display: block
+  border: 1px solid black;
+  border-collapse: collapse;
+  opacity: 0.95;
+  text-align: center
 }
-.l {
-  background-color: #0a3665;
-  width: 30%;
-  height: 100vh;
-  float: left;
+td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  opacity: 0.95;
+  padding: 10px;
+  text-align: center;
 }
-.r {
-  background-color: #0066ae;
-  width: 70%;
-  height: 100vh;
-  float: right;
-  background-size: cover;
+th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  opacity: 0.95;
+  padding: 10px;
+  text-align: center;
+  background-color: #a70000;
+
 }
-.ri{
-  background-color: yellow;
-  width: 100%;
-  height: 150px;
-  margin: 0;
+tr:nth-child(even){
+  background-color: white;
 }
+tr:nth-child(odd){
+  background-color: #e8e8e8;
+}
+/*.set-meetups{
+  background-color: grey;
+  width: 100px;
+  height: 400px;
+}*/
 /*.findgame-message-container{
   background-color: #0a3665;
   height: 100vh;

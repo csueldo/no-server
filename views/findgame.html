@@ -1,70 +1,52 @@
+<main>
+    <header>
 
-  <!-- <div class="findgame-message-container">
-      <div class="message-center-container">
-      </div>
-      <div class="findgame-container">
-          <h1>Games Attending</h1>
-          <button type="button" ui-sref="home">Home</button>
+        <div>
+            <div>
+                <label>Name</label>
+                <input class="form-control" type="text" />
+            </div>
 
-          <button type="button" name="setup" ui-sref="find-setup">Set Up Game</button>
-      </div>
-  </div>
-  <div class="findgame-right-container">
+            <div>
+                <label>Date</label>
+                <input class="form-control" type="text" />
+            </div>
 
-      <div class="findgame-header-container">
-          <header>
-              <button>Add Meetup</button>
+            <div>
+                <label>Time</label>
+                <input class="form-control" type="text" />
+            </div>
+            <div>
+                <label>Location</label>
+                <input class="form-control" type="text" />
+            </div>
 
-              <div class="new-meetup">
-                  <div class="meetup-form">
-                      <label>Name:</label>
-                      <input class="form-control" type="text" />
-                  </div>
+            <button class="btn btn-success">
+							Submit
+						</button>
+            <button class="btn btn-danger">
+							Cancel
+						</button>
+        </div>
+    </header>
 
-                  <div class="meetup-form">
-                      <label>Address:</label>
-                      <input class="form-control" type="text">
-                  </div>
-
-                  <div class="meetup-form">
-                      <label>Date:</label>
-                      <input class="form-control" type="date">
-                  </div>
-
-                  <div class="meetup-form">
-                      <label>Time:</label>
-                      <input class="form-control" type="time">
-                  </div>
-
-                  <button class="btn btn-sucess">Submit</button>
-                  <button class="btn btn-danger">Cancel</button>
-              </div>
-          </header>
-      </div>
-      <div class="meetup">
-          <table class="table table-bordered">
-              <tr>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <th>Date</th>
-                  <th>Time</th>
-              </tr>
-              <tr ng-repeat="">
-            <td>{{meetup.name}}</td>
-            <td>{{meetup.address}}</td>
-            <td>{{meetup.date}}</td>
-            <td>{{meetup.time}}</td>
+    <div>
+        <table class="table">
+          <tr>
+            <td colspan="4"><h1>Basketball Meetups</h1></td>
           </tr>
-          </table>
-      </div>
-  </div> -->
-  <div class="mc">
-      <div class="l">
-
-      </div>
-      <div class="r">
-       <div class="ri">
-
-       </div>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+            </tr>
+            <tr ng-repeat="data in meetup">
+                <td>{{meetup.name}}</td>
+                <td>{{meetup.date}}</td>
+                <td>{{meetup.time}}</td>
+                <td>{{meetup.location}}</td>
+            </tr>
+        </table>
     </div>
-  </div>
+</main>
