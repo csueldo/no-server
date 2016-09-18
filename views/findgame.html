@@ -1,7 +1,7 @@
 <main>
     <header>
 
-        <div>
+        <div class="fg-header">
             <div>
                 <label>Name</label>
                 <input class="form-control" type="text" />
@@ -31,8 +31,9 @@
     </header>
 
     <div>
+      <input ng-model="searchText" type="text" class="form-control search-meetup" placeholder="Search meetup...">
         <table class="table">
-          <tr>
+          <tr id="he">
             <td colspan="4"><h1>Basketball Meetups</h1></td>
           </tr>
             <tr>
@@ -41,11 +42,12 @@
                 <th>Time</th>
                 <th>Location</th>
             </tr>
-            <tr ng-repeat="data in meetup">
-                <td>{{meetup.name}}</td>
-                <td>{{meetup.date}}</td>
-                <td>{{meetup.time}}</td>
-                <td>{{meetup.location}}</td>
+
+            <tr ng-repeat="x in meetup | orderBy: 'date' | filter: searchText">
+                <td>{{x.name}}</td>
+                <td>{{x.date}}</td>
+                <td>{{x.time}}</td>
+                <td>{{x.location}}</td>
             </tr>
         </table>
     </div>
