@@ -1,33 +1,33 @@
 <main id="main-findgame" class="main-size">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="open-add-meetup">
-            <div>
-                <label id="label">Name</label>
-                <input ng-model="newMeetup.name" class="form-control" type="text" />
+        <form class="open-add-meetup">
+            <div id="pop-divs">
+                <label id="label" style="padding-right: 3px">Name</label>
+                <input ng-model="newMeetup.name" class="form-control" type="text" placeholder="First Last" />
             </div>
 
-            <div>
-                <label id="label">Date</label>
-                <input ng-model="newMeetup.date" class="form-control" type="text" />
+            <div id="pop-divs">
+                <label id="label" style="padding-right: 11px">Date</label>
+                <input ng-model="newMeetup.date" class="form-control" type="text" placeholder="mm/dd/yyyy"/>
             </div>
 
-            <div>
-                <label id="label">Time</label>
-                <input ng-model="newMeetup.time" class="form-control" type="text" />
+            <div id="pop-divs">
+                <label id="label" style="padding-right: 9px" >Time</label>
+                <input ng-model="newMeetup.time" class="form-control" type="text" placeholder="00:00 am/pm"/>
             </div>
-            <div>
-                <label id="label">Location</label>
-                <input ng-model="newMeetup.location" class="form-control" type="text" />
+            <div id="pop-divs">
+                <label id="label" >Where</label>
+                <input ng-model="newMeetup.location" class="form-control" type="text" placeholder="Address, City" />
             </div>
 
-            <button ng-click="addMeetup( newMeetup )" class="btn btn-success">
+            <button ng-click="addMeetup( newMeetup )" id="btn-add">
 							Submit
 						</button>
-            <button>
+            <button id="btn-cancel" type="reset" value="Reset">
 							Cancel
 						</button>
-        </div>
+        </form>
     </div>
 
     <!-- Use any element to open the sidenav -->
