@@ -23,7 +23,7 @@
 .wrap-container{
   text-align: center;
   height: 180px;
-  width: 300px;
+  width: 330px;
   position: relative;
   margin: 25% 0%;
   color: white;
@@ -40,7 +40,6 @@
   border: 2px solid white;
   background-color: white;
   color: black;
-  opacity: .90;
   border-radius: 6px;
   font-size: 16px;
 }
@@ -59,4 +58,5 @@
 }
 button{
 outline: none;
+cursor: pointer;
 }

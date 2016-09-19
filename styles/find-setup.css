@@ -24,7 +24,7 @@
 .picking-content-wrapper{
   height: 400px;
   width: 800px;
-  top: 100px;
+  top: 50px;
   position: relative;
 }
 .picking-left{
@@ -36,20 +36,25 @@
 .picking-right{
   height: 400px;
   width: 400px;
-  background-color: gray;
+  background-color: darkgray;
   float: right;
 
 }
-/*.picking-h2{
-  margin-left: 20px:
-}*/
-.search-text{
+.setup-text{
   color: black;
   text-shadow: 1px 1px 2px white;
-  font-weight: 200;
+  font-weight: 400;
+  padding-left: 100px;
+}
+.find-text{
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  font-weight: 400;
+  padding-left: 100px;
+  margin-top: 62px;
 }
 
-.ff {
+.input-l {
 
     height: 20px;
     width: 300px;
@@ -68,8 +73,15 @@
     opacity: .90;
     height: 400px;
 }
+#findG-button{
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-left: 150px;
+}
 #btn1-add{
-    margin: 20px 10px 0 20px;
+    margin: 60px 10px 0 50px;
     width: 100px;
     height: 40px;
     border-radius: 4px;
@@ -78,20 +90,27 @@
 }
 #btn1-cancel{
     width: 100px;
-    margin-top: 20px;
-    margin-left: 275px;
+    margin-top: 60px;
+    margin-left: 265px;
     height: 40px;
     border-radius: 4px;
 }
 #ps{
   margin: 1px 0 0px 20px;
 }
+.footer-black{
+  background-color: black;
+  height: 60px;
+  width: 100%;
 
-/*.right-margin{
-  background-color:black;
-  height: 100vh;
-  width: 20%;
-  float: right;
 
-  position: relative;
-}*/
+}
+.footer-gray{
+  width: 800px;
+  height: 40px;
+  background-color: darkgray;
+}
+#footer{
+  position: fixed;
+  bottom: 0;
+}

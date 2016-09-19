@@ -22,7 +22,7 @@
     left: 0;
     background-color: #404040; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10%; /* Place content 60px from the top */
+    padding-top: 8%; /* Place content 60px from the top */
     transition: .8s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -56,20 +56,24 @@
     background: url("http://wfiles.brothersoft.com/m/Michael%20Jordan_31282-1280x800.jpg")no-repeat center;
     background-size: cover;
 }
+#logo{
+  float: right;
+  top: 20px;
+}
 .main-size{
   width: 100%;
   height: 100vh;
 }
 .open-add-meetup{
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     background-color: #282828;
     box-sizing: border-box;
     opacity: .90;
-    height: 600px;
+    height: 500px;
 }
 #btn-add{
-    margin: 180px 10px 0 10px;
+    margin: 180px 10px 0 25px;
     width: 100px;
     height: 40px;
     border-radius: 4px;
@@ -79,7 +83,7 @@
 #btn-cancel{
     width: 100px;
     margin-top: 180px;
-    margin-left: 240px;
+    margin-left: 260px;
     height: 40px;
     border-radius: 4px;
 }
@@ -94,10 +98,10 @@
     background-color: #404040;
 }
 
-.form-control {
+.form-control1 {
 
-    height: 20px;
-    width: 300px;
+    height: 25px;
+    width: 80%;
     margin: 8px;
     font-size: 18px;
     color: #555;
@@ -106,9 +110,9 @@
     border-radius: 4px;
 }
 
-.form-table {
-    width: 98%;
-    height: 18px;
+.form-table1 {
+    width: 100%;
+    height: 30px;
     margin: 0 0 10px 0;
     padding: 8px;
     font-size: 16px;

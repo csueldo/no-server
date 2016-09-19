@@ -1,25 +1,25 @@
 <main id="main-findgame" class="main-size">
-  <!-- <img height="100px" width="100px" style="cursor: pointer" src="http://www.mcsportsadvantage.com/Generic%20Images%20Website%20Basketball_files/Basketball%20Grunge%20Logo%20White.jpg" ui-sref="home" /> -->
+  <img height="100px" width="100px" style="cursor: pointer" id="logo"src="http://www.mcsportsadvantage.com/Generic%20Images%20Website%20Basketball_files/Basketball%20Grunge%20Logo%20White.jpg" ui-sref="home" />
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <form class="open-add-meetup">
             <div id="pop-divs">
                 <label id="label" style="padding-right: 3px">Name</label>
-                <input ng-model="newMeetup.name" class="form-control" type="text" placeholder="First Last" />
+                <input ng-model="newMeetup.name" class="form-control1" type="text" placeholder="First Last" />
             </div>
 
             <div id="pop-divs">
                 <label id="label" style="padding-right: 11px">Date</label>
-                <input ng-model="newMeetup.date" class="form-control" type="text" placeholder="mm/dd/yyyy"/>
+                <input ng-model="newMeetup.date" class="form-control1" type="text" placeholder="mm/dd/yyyy"/>
             </div>
 
             <div id="pop-divs">
                 <label id="label" style="padding-right: 9px" >Time</label>
-                <input ng-model="newMeetup.time" class="form-control" type="text" placeholder="00:00 am/pm"/>
+                <input ng-model="newMeetup.time" class="form-control1" type="text" placeholder="00:00 am/pm"/>
             </div>
             <div id="pop-divs">
                 <label id="label" >Where</label>
-                <input ng-model="newMeetup.location" class="form-control" type="text" placeholder="Address, City" />
+                <input ng-model="newMeetup.location" class="form-control1" type="text" placeholder="Address, City" />
             </div>
 
             <button ng-click="addMeetup( newMeetup )" id="btn-add">
@@ -38,7 +38,7 @@
     <div id="main">
 
       <div class="meetups-table">
-          <input ng-model="searchText" type="text" class="form-table search-meetup" placeholder="Search meetup...">
+          <input ng-model="searchText" type="text" class="form-table1 search-meetup" placeholder="Search meetup...">
           <div class="div-size">
               <table class="table">
                   <tr id="tr-background">
