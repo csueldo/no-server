@@ -1,8 +1,47 @@
-.fg-header{
+#mmm {
+  background-image: url("http://www.basketballelite.com/wp-content/uploads/2015/05/basketball-court-generic-angle.jpg");
+  background-size: cover;
+}
+  .fg-header{
+    width: 95%;
+    margin: auto;
   background-color: #0a3665;
+  box-sizing: border-box;
+  height: 250px;
 }
 #he{
   background-color: #0066ae;
+}
+.form-control{
+  width: 60%;
+  height: 20px;
+  margin: 8px;
+  font-size: 18px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-table{
+  width: 98.6%;
+  height: 20px;
+  margin: 0 0 10px 0;
+  padding: 8px;
+  font-size: 18px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label{
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+
+}
+.meetups-table{
+  width: 95%;
+  margin: 15px auto;
 }
 .table{
   width: 100%;
@@ -15,7 +54,7 @@ td{
   border: 1px solid black;
   border-collapse: collapse;
   opacity: 0.95;
-  padding: 10px;
+  padding: 16px;
   text-align: center;
 }
 th{
@@ -33,27 +72,3 @@ tr:nth-child(even){
 tr:nth-child(odd){
   background-color: #e8e8e8;
 }
-/*.set-meetups{
-  background-color: grey;
-  width: 100px;
-  height: 400px;
-}*/
-/*.findgame-message-container{
-  background-color: #0a3665;
-  height: 100vh;
-  width: 30%;
-  float: left;
-}
-.findgame-right-container{
-  background-color: #0066ae;
-  height: 100hv;
-  width: 70%;
-  float: right;
-
-}
-.meetups{
-  width:70%;
-  height: 800px;
-  background-color: red;
-
-}*/

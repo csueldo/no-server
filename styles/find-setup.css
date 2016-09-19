@@ -1,6 +1,7 @@
 
 .find-setup-main-container{
-  background: #0a3665;
+  background-image: url("https://static1.squarespace.com/static/551c45d2e4b0b5d1563f2eda/t/551d5efbe4b06a2886ecb452/1427988219221/8198980385_1318446f59_b.jpg");
+  background-size: cover;
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -9,15 +10,16 @@
   background: white;
   height: 100vh;
   width: 800px;
+  opacity: .90;
   margin: 0 auto;
 }
 .find-setup-header{
-  background-color: #0066ae;
+  background-color: black;
   height: 60px;
 }
 .find-setup-2header{
   height: 40px;
-  background-color: #bc162c;
+  background-color: darkgray;
 }
 .picking-content-wrapper{
   height: 400px;

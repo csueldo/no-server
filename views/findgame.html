@@ -1,37 +1,37 @@
-<main>
+<main id="mmm">
     <header>
 
         <div class="fg-header">
-            <div>
+            <div >
                 <label>Name</label>
-                <input class="form-control" type="text" />
+                <input ng-model="newMeetup.name" class="form-control" type="text" />
             </div>
 
-            <div>
+            <div >
                 <label>Date</label>
-                <input class="form-control" type="text" />
+                <input ng-model="newMeetup.date"class="form-control" type="text" />
             </div>
 
             <div>
                 <label>Time</label>
-                <input class="form-control" type="text" />
+                <input ng-model="newMeetup.time"class="form-control" type="text" />
             </div>
             <div>
                 <label>Location</label>
-                <input class="form-control" type="text" />
+                <input ng-model="newMeetup.location"class="form-control" type="text" />
             </div>
 
-            <button class="btn btn-success">
+            <button ng-click="addMeetup( newMeetup )"class="btn btn-success">
 							Submit
 						</button>
-            <button class="btn btn-danger">
+            <button>
 							Cancel
 						</button>
         </div>
     </header>
 
-    <div>
-      <input ng-model="searchText" type="text" class="form-control search-meetup" placeholder="Search meetup...">
+    <div class="meetups-table">
+      <input ng-model="searchText" type="text" class="form-table search-meetup" placeholder="Search meetup...">
         <table class="table">
           <tr id="he">
             <td colspan="4"><h1>Basketball Meetups</h1></td>

@@ -4,4 +4,13 @@ angular.module('basketballApp')
     $scope.meetup = basketballService.basketballData;
     console.log($scope.meetup);
 
+
+    $scope.addMeetup = function( newMeetup ) {
+
+        basketballService.basketballData.push( newMeetup );
+
+        $scope.newMeetup = {};
+        
+
+      };
   });
