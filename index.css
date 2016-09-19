@@ -9,14 +9,13 @@
 }
 .left {
   background-color: black;
-  width: 30%;
+  width: 20%;
   height: 100vh;
-  z-index: -1;
   float: left;
 }
 .right {
   background: url("http://backgrounds4k.net/wp-content/uploads/2016/04/Michael-Jordan-4k.jpg") no-repeat center;
-  width: 70%;
+  width: 80%;
   height: 100vh;
   float: right;
   background-size: cover;
@@ -26,11 +25,11 @@
   height: 180px;
   width: 300px;
   position: relative;
-  margin-top: 220px;
-  margin-left: 180px;
+  margin: 25% 0%;
   color: white;
   opacity: .90;
   font-weight: 100;
+
 }
 #h1-size{
   font-size: 35px;

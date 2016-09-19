@@ -1,51 +1,59 @@
-
-
-    <!-- <div class="left-margin">
+<!-- <div class="left-margin">
 
     </div> -->
 <main class="find-setup-main-container">
     <div class="background-container">
-      <div class="find-setup-header">
-          what is this?
-      </div>
-      <div class="find-setup-2header">
-      </div>
+        <div class="find-setup-header">
+          <img height="100px" width="100px" style="cursor: pointer" src="http://www.mcsportsadvantage.com/Generic%20Images%20Website%20Basketball_files/Basketball%20Grunge%20Logo%20White.jpg" ui-sref="home" />
+        </div>
+        <div class="find-setup-2header">
+
+        </div>
+
         <div class="picking-content-wrapper">
 
-
             <div class="picking-left">
-                <h2 class="search-text">What are you waiting for?</h1>
-              <h3 class="search-text">Find a meetup and play basketball!</h2>
-                <fieldset>
-                    <legend class="search-legend">Search Details</legend>
-                    <label for="">
-                    Enter Zipcode:
-                  <input type="text" name="zipcode">
-                </label><br />
-                    <label for="">
-                    Search within (miles):
-                  <select name="miles">
-                    <option>5</option>
-                    <option>10</option>
-                    <option>15</option>
-                    <option>20</option>
-                  </select></label><br />
-                    <label for="">What day do you want to play on?</label>
-                    <input type="date"><br />
 
-                    <div class="search-button-container">
-                      <button type="button" ui-sref="findgame">Search</button>
+                <form class="op">
+                    <h2 class="search-text">What are you waiting for?</h1>
+                <h3 class="search-text">Find a meetup and play basketball!</h2>
+                    <div id="ps">
+                        <label style="padding-right: 3px">Name</label>
+                        <input ng-model="newMeetup.name" class="ff" type="text" placeholder="First Last" />
                     </div>
 
-                </fieldset>
+                    <div id="ps">
+                        <label style="padding-right: 11px">Date</label>
+                        <input ng-model="newMeetup.date" class="ff" type="text" placeholder="mm/dd/yyyy" />
+                    </div>
+
+                    <div id="ps">
+                        <label style="padding-right: 9px">Time</label>
+                        <input ng-model="newMeetup.time" class="ff" type="text" placeholder="00:00 am/pm" />
+                    </div>
+                    <div id="ps">
+                        <label>Where</label>
+                        <input ng-model="newMeetup.location" class="ff" type="text" placeholder="Address, City" />
+                    </div>
+
+                    <button ng-click="addMeetup( newMeetup )" id="btn1-add" ui-sref="findgame">
+        							Submit
+        						</button>
+                    <button id="btn1-cancel" type="reset" value="Reset">
+        							Cancel
+        						</button>
+                </form>
             </div>
 
             <div class="picking-right">
-              <h2>Start your own Meet Up!</h2>
+                <h2>Don't want to setup a Meetup?</h2>
+                <h4>No Problem!</h4>
+                <h6>Search for existing Meetups!</h6>
+                <button type="button" name="find" ui-sref="findgame">Find Game</button>
             </div>
-            <!-- <button type="button" ui-sref="home">Home</button>
-          <button type="button" name="find" ui-sref="findgame">Find Game</button>
-          <button type="button" name="setup" ui-sref="setupgame">Set Up Game</button> -->
+
+
+
         </div>
 
 
@@ -53,6 +61,3 @@
 
     </div>
 </main>
-    <!-- <div class="right-margin">
-
-    </div> -->

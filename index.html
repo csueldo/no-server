@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="styles/find-setup.css">
     <link rel="stylesheet" href="styles/findgame.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 </head>
 
 <body class="index-body" ng-controller="findgameController">
@@ -15,19 +16,19 @@
 <ui-view>
     <div class="main-container">
         <div class="left">
-            <div class="wrap-container">
-                <h1 id="h1-size">Basketball Meetups</h1>
-                <p class="p-home">
-                    you got next game?
-                </p>
-                <div class="button-container">
-                    <button ui-sref="find-setup" class="start-button">I'm in</button>
-                </div>
-            </div>
+
 
         </div>
         <div class="right">
-
+          <div class="wrap-container">
+              <h1 id="h1-size">Basketball Meetups</h1>
+              <p class="p-home">
+                  you got next game?
+              </p>
+              <div class="button-container">
+                  <button ui-sref="find-setup" class="start-button">I'm in</button>
+              </div>
+          </div>
         </div>
     </div>
 </ui-view>
@@ -37,6 +38,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
     <script src="js/services/basketballApp.js"></script>
     <script src="js/controllers/findgameController.js"></script>
     <script src="js/services/basketballService.js"></script>
