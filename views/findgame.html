@@ -1,54 +1,67 @@
-<main id="mmm">
-    <header>
-
-        <div class="fg-header">
-            <div >
-                <label>Name</label>
+<main id="main-findgame" class="main-size">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="open-add-meetup">
+            <div>
+                <label id="label">Name</label>
                 <input ng-model="newMeetup.name" class="form-control" type="text" />
             </div>
 
-            <div >
-                <label>Date</label>
-                <input ng-model="newMeetup.date"class="form-control" type="text" />
+            <div>
+                <label id="label">Date</label>
+                <input ng-model="newMeetup.date" class="form-control" type="text" />
             </div>
 
             <div>
-                <label>Time</label>
-                <input ng-model="newMeetup.time"class="form-control" type="text" />
+                <label id="label">Time</label>
+                <input ng-model="newMeetup.time" class="form-control" type="text" />
             </div>
             <div>
-                <label>Location</label>
-                <input ng-model="newMeetup.location"class="form-control" type="text" />
+                <label id="label">Location</label>
+                <input ng-model="newMeetup.location" class="form-control" type="text" />
             </div>
 
-            <button ng-click="addMeetup( newMeetup )"class="btn btn-success">
+            <button ng-click="addMeetup( newMeetup )" class="btn btn-success">
 							Submit
 						</button>
             <button>
 							Cancel
 						</button>
         </div>
-    </header>
-
-    <div class="meetups-table">
-      <input ng-model="searchText" type="text" class="form-table search-meetup" placeholder="Search meetup...">
-        <table class="table">
-          <tr id="he">
-            <td colspan="4"><h1>Basketball Meetups</h1></td>
-          </tr>
-            <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Location</th>
-            </tr>
-
-            <tr ng-repeat="x in meetup | orderBy: 'date' | filter: searchText">
-                <td>{{x.name}}</td>
-                <td>{{x.date}}</td>
-                <td>{{x.time}}</td>
-                <td>{{x.location}}</td>
-            </tr>
-        </table>
     </div>
+
+    <!-- Use any element to open the sidenav -->
+    <button class="open-close" style="cursor: pointer" onclick="openNav()">&#9776; Add MeetUp</button>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+
+      <div class="meetups-table">
+          <input ng-model="searchText" type="text" class="form-table search-meetup" placeholder="Search meetup...">
+          <div class="div-size">
+              <table class="table">
+                  <tr id="tr-background">
+                      <td colspan="4">
+                          <h1 id="h1-meetups">Basketball Meetups</h1></td>
+                  </tr>
+                  <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Location</th>
+                  </tr>
+
+                  <tr ng-repeat="x in meetup | filter: searchText">
+                      <td>{{x.name}}</td>
+                      <td>{{x.date}}</td>
+                      <td>{{x.time}}</td>
+                      <td>{{x.location}}</td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+
+    </div>
+
 </main>

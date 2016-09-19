@@ -7,10 +7,10 @@ angular.module('basketballApp')
 
     $scope.addMeetup = function( newMeetup ) {
 
-        basketballService.basketballData.push( newMeetup );
+        basketballService.basketballData.unshift( newMeetup );
 
         $scope.newMeetup = {};
-        
+
 
       };
   });
